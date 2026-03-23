@@ -13,4 +13,27 @@ Planned Screens for Activity 3
 - Shifts
 - Invoices
 
+
+NAV FLOW
+- Login
+  ↓
+Dashboard
+  ├── Employees
+  │     └── Add / Edit Employee
+  ├── Business Days
+  ├── Sales
+  │     └── Daily Sales Details
+  ├── Expense Types
+  ├── Expenses
+  │     └── Add Expense
+  ├── Merchandise Types
+  ├── Merchandise Purchases
+  │     └── Add Purchase
+  ├── Payroll
+  │     └── Payroll Details
+  ├── Shifts
+  │     └── Add / Edit Shift
+  └── Invoices
+        └── Invoice Details
+
   
