@@ -36,4 +36,18 @@ Dashboard
   └── Invoices
         └── Invoice Details
 
+  Dashboard Plan
+
+Summary Cards:
+- Total Sales → sales_daily
+- Total Expenses → expenses
+- Payroll Total → payroll
+- Unpaid Invoices → invoices
+
+Dashboard Sections:
+- Recent Sales
+- Recent Expenses
+- Today's Shifts
+- Invoice Status
+
   
