@@ -122,3 +122,39 @@ The Shifts screen displays employee shift records, including clock-in and clock-
 Invoices
 
 The Invoices screen displays invoice records and provides summary information such as total invoices, paid invoices, and unpaid invoices. It is connected to the invoices table and helps users track invoice and payment status.
+
+---
+
+## Activity 4 — Store GUI starter (Python + Tkinter + SQLite)
+
+This branch adds a working login shell: SQLite-backed users, role-based dashboards (employee vs manager/owner), manager-only account creation, username suggestions on login, and an inactivity logout.
+
+### Requirements
+
+- **Python 3.9+** (stdlib only: `tkinter`, `sqlite3`; no `pip install` required on most systems)
+- On Linux, if Tk is missing: install `python3-tk` (e.g. `sudo apt install python3-tk`)
+
+### Run the application
+
+From the project root:
+
+```bash
+python3 main.py
+```
+
+The first run creates `store.db` next to `main.py` and seeds demo accounts:
+
+| Username   | Password    | Role    |
+|-----------|-------------|---------|
+| `manager` | `manager123` | manager |
+| `employee`| `employee123`| employee|
+
+After **45 seconds** without keyboard or mouse activity, the app logs out and returns to the login screen (adjust `SESSION_TIMEOUT_SECONDS` in `main.py` if needed).
+
+### Project layout
+
+- `main.py` — entry point and screen navigation
+- `db.py` — database schema, hashing, queries
+- `auth.py` — login and manager verification
+- `session.py` — inactivity monitor
+- `ui/` — `login_screen.py`, `manager_dashboard.py`, `employee_dashboard.py`, `create_account.py`
